@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  db:
+    container_name: database
+    image: 'postgres:alpine'
+    environment:
+      POSTGRES_PASSWORD: '!Vty1608995'
+      POSTGRES_USER: 'postgres'
+    volumes:
+      - data:/var/lib/postgresql/data
+  csv_to_db:
+    container_name: csb_to_db
+    image: 'docker-csv-to-db'
+
+  server:
+    container_name: server  
+    image: 'docker-flask-task6'
+    ports:
+      - '5000:5000'
+volumes:
+  data:

@@ -1,0 +1,9 @@
+{
+    "hostname": "localhost",
+    "username": "postgres",
+    "port_id": 5432,
+    "pwd": "!Vty1608995",
+    "database": "task6",
+    "postgres_conn_string": "postgresql://postgres:!Vty1608995@db/postgres"
+
+}
